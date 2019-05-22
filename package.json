@@ -1,0 +1,42 @@
+{
+  "name": "@dyb881/transition",
+  "version": "0.1.7",
+  "description": "组件出入动画，使用 react-addons-css-transition-group 封装，快捷创建动画 less 函数",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "typings": "./lib/index.d.ts",
+  "style": "./lib/style.css",
+  "less": "./src/style.less",
+  "scripts": {
+    "build": "tsc && lessc ./src/style.less > ./lib/style.css",
+    "patch": "npm version patch",
+    "minor": "npm version minor",
+    "major": "npm version major",
+    "push": "yarn build && npm publish --access=public"
+  },
+  "author": "dyb881",
+  "license": "ISC",
+  "devDependencies": {
+    "less": "^3.9.0",
+    "typescript": "^3.4.5"
+  },
+  "dependencies": {
+    "@types/react": "^16.8.18",
+    "@types/react-addons-css-transition-group": "^15.0.5",
+    "@types/react-dom": "^16.8.4",
+    "react": "^16.8.6",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-dom": "^16.8.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dyb881/transition.git"
+  },
+  "keywords": [
+    "transition"
+  ],
+  "bugs": {
+    "url": "https://github.com/dyb881/transition/issues"
+  },
+  "homepage": "https://github.com/dyb881/transition#readme"
+}

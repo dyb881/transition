@@ -1,0 +1,32 @@
+/*
+  创建动画
+  .createTransition(
+    动画标识名,
+    {进入动画 - 开始},
+    {进入动画 - 结束},
+    {离开动画 - 开始},
+    {离开动画 - 结束}
+  );
+  往返动画
+  .createTransition(
+    动画标识名,
+    {进入动画 - 开始 & 离开动画 - 结束},
+    {进入动画 - 结束 & 离开动画 - 开始},
+  );
+ */
+.createTransition(@name, @enter, @enterActive, @leave: @enterActive, @leaveActive: @enter) {
+  .@{name}-enter {
+    @enter();
+  }
+  .@{name}-enter.@{name}-enter-active {
+    transition: all 0.3s;
+    @enterActive();
+  }
+  .@{name}-leave {
+    @leave();
+  }
+  .@{name}-leave.@{name}-leave-active {
+    transition: all 0.3s;
+    @leaveActive();
+  }
+}
