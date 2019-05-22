@@ -1,1 +1,3 @@
-export default './react_component';
+import ReactComponent from './react_component';
+
+export default ReactComponent;
