@@ -14,7 +14,7 @@
     {进入动画 - 结束 & 离开动画 - 开始},
   );
  */
-.createTransition(@name, @enter, @enterActive, @leave: @enterActive, @leaveActive: @enter) {
+.createTransition(@name, @enter, @enterActive, @exit: @enterActive, @exitActive: @enter) {
   .@{name}-enter {
     @enter();
   }
@@ -22,11 +22,11 @@
     transition: all 0.3s;
     @enterActive();
   }
-  .@{name}-leave {
-    @leave();
+  .@{name}-exit {
+    @exit();
   }
-  .@{name}-leave.@{name}-leave-active {
+  .@{name}-exit.@{name}-exit-active {
     transition: all 0.3s;
-    @leaveActive();
+    @exitActive();
   }
 }
