@@ -1,6 +1,6 @@
 # transition
 
-组件出入动画，使用 react-addons-css-transition-group 封装，快捷创建动画 less 函数
+组件出入动画，使用 react-transition-group 封装，快捷创建动画 less 函数
 
 ## 说明
 
@@ -11,8 +11,7 @@ interface IProps {
   name: string; // 动画标识名
   time?: number; // 动画时长 默认 400
   enterTime?: number; // 进入动画时长
-  leaveTime?: number; // 离开动画时长
-  [key: string]: any; // 剩余参数与 react-addons-css-transition-group 相同
+  exitTime?: number; // 离开动画时长
 }
 ```
 
