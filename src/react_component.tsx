@@ -14,7 +14,7 @@ interface IProps {
 const Transition: React.SFC<IProps> = ({ name, time = 400, enterTime = time, exitTime = time, children }) => (
   <TransitionGroup>
     {React.Children.map(children, child => (
-      <CSSTransition key={(child as any).key} classNames={name} timeout={{ enter: enterTime, exit: exitTime }}>
+      <CSSTransition key={child && (child as any).key} classNames={name} timeout={{ enter: enterTime, exit: exitTime }}>
         {child}
       </CSSTransition>
     ))}
