@@ -1,6 +1,6 @@
 {
   "name": "@dyb881/transition",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "组件出入动画，使用 react-addons-css-transition-group 封装，快捷创建动画 less 函数",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
