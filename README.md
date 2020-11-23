@@ -1,3 +1,5 @@
+# ！！已经停止更新，并迁移到 [Seasoning](https://dyb881.github.io/seasoning/common/components/transition)
+
 # transition
 
 组件出入动画，使用 react-transition-group 封装，快捷创建动画 less 函数
